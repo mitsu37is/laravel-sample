@@ -2,14 +2,13 @@
 <html lang="{{ app()->getLocale() }}">
 <head>
     <title>@yield('title', 'Laracasts')</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
 </head>
-<body>
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About us</a></li>
-        <li><a href="/contact">Contact</a></li>
-    </ul>
+<body style="padding-top: 40px;">
 
-    @yield('content')
+    <div class="container">
+        @yield('content')
+    </div>
+
 </body>
 </html>

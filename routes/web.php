@@ -32,6 +32,9 @@ Route::resource('projects', 'ProjectsController');
     Route::get('/projects/{project}', 'ProjectsController@destroy');
  */
 
+Route::patch('/tasks/{task}', 'ProjectTasksController@update');
+Route::post('/projects/{project}/tasks', 'ProjectTasksController@store');
+
 Route::get('/', 'PagesController@welcome');
 Route::get('/about', 'PagesController@about');
 Route::get('/contact', 'PagesController@contact');
